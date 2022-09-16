@@ -25,7 +25,7 @@ const navLinkDetails = [
 
 const Navbar = () => {
   const location = useLocation();
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(true);
   const [currentUrl, setCurrentUrl] = useState("");
 
   const handleNavOpen = () => {
@@ -54,14 +54,14 @@ const Navbar = () => {
               color="white"
               size={30}
               className="cursor-pointer"
-              onClick={handleNavOpen}
+              onClick={() => handleNavOpen()}
             />
           ) : (
             <FaTimes
               color="white"
               size={30}
               className="cursor-pointer"
-              onClick={handleNavOpen}
+              onClick={() => handleNavOpen()}
             />
           )}
         </div>
