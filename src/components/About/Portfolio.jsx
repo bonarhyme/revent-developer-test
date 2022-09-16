@@ -20,7 +20,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
-      <h2 className="heading-fancy small-margin">Resume</h2>
+      <h2 className="heading-fancy small-margin">Portfolio</h2>
       <div className="actual-texts">
         <ul className="portfolio-nav-list">
           {typeOfPortfolio?.map((tyOfPo, index) => {
